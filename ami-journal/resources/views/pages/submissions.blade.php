@@ -1,10 +1,6 @@
-@extends('layouts.app')
-
-@section('content')
-   <h1>Cikkek</h1>
-
-   @foreach ($articles as $article)
-       <h2>{{ $article->title }}</h2>
-       <p>{{ $article->body }}</p>
-   @endforeach
-@endsection
+<h1>Cikkek</h1>
+  <ul>
+      @foreach ($articles as $article)
+          <li>{{ $article->title }}</li>
+      @endforeach
+  </ul>
