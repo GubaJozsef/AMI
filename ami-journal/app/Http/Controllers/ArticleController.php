@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class ArticleController extends Controller 
 {
@@ -10,11 +11,13 @@ class ArticleController extends Controller
   /**
    * Display a listing of the resource.
    *
-   * @return Response
+   * 
    */
   public function index()
   {
-    
+      $articles = Article::all();
+
+      return view('articles.index', compact('articles'));
   }
 
   /**
