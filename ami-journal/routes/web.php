@@ -22,3 +22,4 @@ Route::get('/login',function () {
 Route::get('/admin', function() {
     return view('adminpanel.adminpanel');
 });
+Route::get('/articles', 'ArticleController@index');
