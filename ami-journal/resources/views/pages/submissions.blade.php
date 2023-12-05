@@ -37,7 +37,11 @@
 </style>
 <body>
 
-<a><button>Articles</button></a>
+    <h1>Submissions Page</h1>
+
+    <a href="{{ route('articles.index') }}"><button>Articles</button></a>
+
+
 
     <div class="createSubmission">
     <form method="POST" action="register.php">
