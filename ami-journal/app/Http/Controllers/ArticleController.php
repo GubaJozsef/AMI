@@ -8,7 +8,6 @@ use App\Models\Article;
 
 class ArticleController extends Controller 
 {
-
   /**
    * Display a listing of the resource.
    *
@@ -26,7 +25,7 @@ class ArticleController extends Controller
    */
   public function create()
   {
-      
+
   }
 
   /**
