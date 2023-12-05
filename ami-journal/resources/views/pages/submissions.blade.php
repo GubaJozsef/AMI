@@ -36,19 +36,9 @@
     }
 </style>
 <body>
-    <h1>Articles</h1>
-    <ul>
-        @foreach ($articles as $article)
-            <li>
-                <strong>{{ $article->title }}</strong><br>
-                <em>Published by: {{ $article->publisher_name }}</em><br>
-                <strong>Overview:</strong> {{ $article->overview }}<br>
-                <strong>Type:</strong> {{ $article->type }}<br>
-                <strong>Description:</strong> {{ $article->description }}<br>
-                <strong>Published at:</strong> {{ $article->published_at->format('Y-m-d H:i:s') }}<br>
-            </li>
-        @endforeach
-    </ul>
+
+<a><button>Articles</button></a>
+
     <div class="createSubmission">
     <form method="POST" action="register.php">
         <table style="margin-left: auto; margin-right: auto;">

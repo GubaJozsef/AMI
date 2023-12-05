@@ -45,4 +45,7 @@ Route::get('/submissions', function () {
     return view('pages.submissions');
 });
 
-Route::get('/submissions', [ArticleController::class, 'index']);
+
+Route::get('/Article', [ArticleController :: class, 'index'])->name('Article.submissions');
+
+

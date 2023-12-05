@@ -16,8 +16,7 @@ class ArticleController extends Controller
    */
   public function index()
   {
-    $articles = Article::all();
-    return view('articles.index', compact('articles'));
+      return view('Article.index');
   }
 
   /**
@@ -27,7 +26,7 @@ class ArticleController extends Controller
    */
   public function create()
   {
-    
+      
   }
 
   /**
@@ -46,9 +45,9 @@ class ArticleController extends Controller
    * @param  int  $id
    * @return Response
    */
-  public function show($id)
+  public function show()
   {
-    
+
   }
 
   /**
